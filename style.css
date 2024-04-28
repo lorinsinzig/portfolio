@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    display: flex;
+    top: 0%;
+    bottom: 0%;
+    left: 25%;
+    right: 25%;
+    justify-content: center;
+    text-align: center;
+}
+
+.col-left{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100vh;
+    position: sticky;
+    top: 0%;
+    color: #FFFFFF;
+}
+
+.content {
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    left: 25%;
+    right: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.introduction {
+    position: absolute;
+    top: 8%;
+    margin-left: 10%;
+}
+
+.left-upper {
+    flex: 2;
+    background-color: #4831D4;
+}
+
+.left-lower {
+    flex: 1;
+    background-color: #CCF381;
+}
+
+h1, h2, p {
+    text-align: left;
+}
+
+h1 {
+    margin: 0%;
+    font-size: 3em;
+    font-weight: bold;
+    color: #CCF381;
+}
+
+h2 {
+    margin-top: 0%;
+    font-size: 1.3em;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+.intro {
+    font-size: 1em;
+    font-weight: 300;
+    margin-right: 10%;
+}
+
+.portrait, .portrait-border {
+    position: absolute;
+    top: 66.6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25vh;
+    height: auto;
+}
+
+.portrait {
+    z-index: 1;
+}
+
+.portrait-border {
+    margin-top: 2em;
+    margin-left: 2em;
+    height: 25vh;
+    border: 1px solid #ffffff;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 6.5%;
+    gap: .7rem;
+}
+
+.fab {
+    color: #4831D4;
+}
+
+.col-right{
+    position: relative;
+    flex: 1;
+    color: #4831D4;
+}
+
+.col-right section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about {
+    margin: 0;
+    position: absolute;
+    top: 9%;
+    border: 1px solid red;
+}
+
+.about p {
+    margin-top: 0;
+}
+
+.experience {
+    margin: 0;
+    position: absolute;
+    top: 8%;
+    border: 1px solid red;
+}
+
+
+.projects {
+    margin: 0;
+    position: absolute;
+    top: 8%;
+    border: 1px solid red;
+}
+
+
+footer{
+    height: 150vh;
+    color: #4831D4;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    min-height: 100vh;
+}
+
+.form h1 {
+    font-size: 2.2em;
+}
+
+.form h2 {
+    font-size: 1em;
+    font-weight: 450;
+}
+
+.form h1,
+.form h2 {
+    text-align: center;
+    color: #4831D4;
+}
+
+.footer {
+    min-height: 50vh;
+    width: 100vw;
+    background-color: #4831D4;
+}
+
+form {
+    color: #4831D4;
+    text-align: left;
+    margin-top: 3em;
+}
+
+label {
+    margin-top: 0%;
+    font-size: .8rem;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+input {
+    padding: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+    width: 100%;
+    line-height: 3;
+    font-size: .9em;
+    font-weight: 200;
+    color: #4831D4;
+    border-bottom: 1px solid #4831D4;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+textarea {
+    padding: 0;
+    border: 0;
+    margin-bottom: 1em;
+    width: 100%;
+    line-height: 2.3;
+    font-size: .9em;
+    font-weight: 200;
+    color: #4831D4;
+    border-bottom: 1px solid #4831D4;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    resize: none;
+}
+
+button {
+    border: 1px solid #4831D4;
+    background: none;
+    color: #4831D4;
+    box-shadow: inset 0 0 0 0 #4831D4;
+    transition: ease-out 0.3s;
+    margin-top: 2em;
+    padding: 1em 6em;
+    font-size: .9em;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    box-shadow: inset  220px 0 0 #4831D4;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+
+    .col-left{
+        position: relative;
+        flex: none;
+        height: 100vh;
+    }
+
+    .content {
+        top: 0%;
+        bottom: 0%;
+        left: 10%;
+        right: 10%;
+    }
+
+    .introduction {
+        top: 13%;
+    }
+
+    h1, h2, p {
+        text-align: left;
+    }
+    
+    h1 {
+        margin: 0%;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #CCF381;
+    }
+    
+    h2 {
+        font-size: .8em;
+        font-weight: 550;
+        margin-bottom: 1rem;
+    }
+
+    .intro {
+        font-size: .7em;
+        margin-right: 0%;
+    }
+}
