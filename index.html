@@ -13,14 +13,14 @@
 <body>
     <div class="container">
         <div class="content">
-            <header>
+            <header class="header">
                 <div class="wrapper">
                     <div>
                         <h1>Lorin Sinzig</h1>
                         <h2>Lernender<br>Informatiker Applikationsentwicklung EFZ</h2>
                         <p class="intro">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</p>
                         <nav>
-                            <ul>
+                            <ul class="nav">
                                 <li>
                                     <a href="#about">
                                         <span class="slab"></span>
@@ -28,15 +28,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#projects">
+                                    <a href="#experiences">
                                         <span class="slab"></span>
-                                        <span>PROJEKTE</span>
+                                        <span>ERFAHRUNGEN</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#experience">
+                                    <a href="#projects">
                                         <span class="slab"></span>
-                                        <span>ERFAHRUNGEN</span>
+                                        <span>PROJEKTE</span>
                                     </a>
                                 </li>
                                 <li>
@@ -73,33 +73,75 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                 </section>
-                <section id="projects">
+                <section id="experiences">
                     <ol>
-                        <li>
-                            <div>
-                                <header>
-                                    
-                                </header>
-                                <div>
-                                    <h3>
-
-                                    </h3>
-                                    <p>
-
-                                    </p>
-                                    <ul>
-
-                                    </ul>
-                                </div>
+                        <li class="experience">
+                            <header>
+                                <span>2022 — HEUTE</span>
+                            </header>
+                            <div class="info">
+                                <h3>
+                                    Ausbildung Informatiker EFZ · Informaticon AG
+                                </h3>
+                                <p>
+                                    Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                                </p>
+                                <ul>
+                                    <li class="tech">
+                                        <div>
+                                            PowerBuilder
+                                        </div>
+                                    </li>
+                                    <li class="tech">
+                                        <div>
+                                            SQL Anywhere
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </li>
                     </ol>
                 </section>
-                <section id="experience">
-                    
+                <section id="projects">
+                    <ol>
+                        <li class="experience">
+                            <header>
+                                <span>2022 — HEUTE</span>
+                            </header>
+                            <div class="info">
+                                <h3>
+                                    Ausbildung Informatiker EFZ · Informaticon AG
+                                </h3>
+                                <p>
+                                    Build and maintain critical components used to construct Klaviyo’s frontend, across the whole product. Work closely with cross-functional teams, including developers, designers, and product managers, to implement and advocate for best practices in web accessibility.
+                                </p>
+                            </div>
+                        </li>
+                    </ol>
                 </section>
                 <section id="contact">
-                    
+                    <div class="form">
+                        <h1>Schickt mir eine Nachricht!</h1>
+                        <h2>Habt Ihr eine Frage? Oder wollt einfach Hallo sagen?</h2>
+                        <form action="contact.php" method="POST" id="contact">
+                            <label for="name">Ihr Name</label>
+                            <input type="text" name="name" id="name" placeholder="Max Muster">
+    
+                            <label for="email">Ihre E-Mail</label>
+                            <input type="email" name="email" id="email" placeholder="max@muster.ch">
+    
+                            <label for="message">Ihre Nachricht</label>
+                            <textarea name="message" id="message" placeholder="Geben Sie Ihre Nachricht ein..."></textarea>
+                        </form>
+                        <div class="button">
+                            <button type="submit" form="contact">Senden</button>
+                        </div>
+                    </div>
+                    <div class="imprint">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
                 </section>
             </main>
         </div>

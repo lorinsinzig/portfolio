@@ -20,12 +20,16 @@ function getVisibleArea(element) {
 // Function to highlight the active navigation item based on scroll position
 function highlightNavItem() {
     var sections = document.querySelectorAll('section');
+    var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+    var upperViewportHeight = windowHeight * 0.25; // 10% of viewport height
     var maxVisibleArea = 0;
     var activeSectionId = null;
 
-    // Find the section with the most content in the viewport
+    // Find the section with the most content in the upper 10% of the viewport
     sections.forEach(function(section) {
-        var visibleArea = getVisibleArea(section);
+        var rect = section.getBoundingClientRect();
+        var visibleHeight = Math.min(rect.bottom, upperViewportHeight) - Math.max(rect.top, 0);
+        var visibleArea = visibleHeight * rect.width;
         if (visibleArea > maxVisibleArea) {
             maxVisibleArea = visibleArea;
             activeSectionId = section.id;
@@ -35,11 +39,9 @@ function highlightNavItem() {
     // Highlight the corresponding navigation item
     var navItem = document.querySelector('nav a[href="#' + activeSectionId + '"]').parentNode;
     if (navItem) {
-        // Remove 'active' class from all nav items
         document.querySelectorAll('nav li').forEach(function(item) {
             item.classList.remove('active');
         });
-        // Add 'active' class to the nav item corresponding to the active section
         navItem.classList.add('active');
     }
 }

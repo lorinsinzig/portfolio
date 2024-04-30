@@ -8,7 +8,7 @@ body{
 .container{
     display: flex;
     top: 0%;
-    min-width: 60%;
+    min-width: 55%;
     justify-content: center;
 }
 
@@ -19,7 +19,7 @@ body{
     justify-content: center;
 }
 
-header {
+.header {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -37,7 +37,7 @@ main {
     padding-bottom: 6em;
 }
 
-section {
+#about {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,6 +71,12 @@ h2 {
     font-size: 1.3em;
     font-weight: 550;
     margin-bottom: 1rem;
+}
+
+h3 {
+    margin: 0;
+    font-size: .95em;
+    font-weight: 600;
 }
 
 p {
@@ -114,14 +120,14 @@ nav li {
 }
 
 ul {
-    padding: 0%;
-    margin-top: 4em;
+    padding: 0;
     width: max-content;
 }
 
 nav {
     font-size: .9em;
     font-weight: 700;
+    margin-top: 4em;
 }
 
 nav a {
@@ -153,6 +159,168 @@ nav li.active {
 
 .active .slab{
     width: 4em;
+}
+
+ol {
+    margin: 0;
+    padding: 0;
+}
+
+#experiences {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    height: fit-content;
+    margin-bottom: 9em;
+}
+
+.experience {
+    padding: 1em;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2em;
+    transition: background-color 0.1s;
+}
+
+.experience header {
+    font-size: .75em;
+    font-weight: 600;
+    margin-top: .25em;
+    opacity: .7;
+}
+
+.experience p {
+    margin-top: .5em;
+    margin-bottom: 0;
+    font-size: .9em;
+}
+
+.experience ul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.experience li {
+    margin-right: .5em;
+}
+
+.experience:hover {
+    background-color: rgba(72, 49, 212, .05);
+    cursor: pointer;
+}
+
+.experience:hover h3 {
+    color: #695acf;
+}
+
+.tech {
+    padding-top: .4em;
+    padding-bottom: .4em;
+    padding-left: .7em;
+    padding-right: .7em;
+    background-color: rgba(72, 49, 212, .1);
+    border-radius: 9999px;
+    font-size: .9em;
+    font-weight: 500;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    height: fit-content;
+    margin-bottom: 9em;
+}
+
+form {
+    color: #4831D4;
+    text-align: left;
+    margin-top: 3em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 8em;
+}
+
+.form h1 {
+    font-size: 2.2em;
+}
+
+.form h2 {
+    font-size: 1em;
+    font-weight: 450;
+}
+
+.form h1,
+.form h2 {
+    text-align: center;
+    color: #4831D4;
+}
+
+label {
+    margin-top: 0%;
+    font-size: .8rem;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+input {
+    padding: 0;
+    border: 0;
+    margin-bottom: 1.5em;
+    width: 100%;
+    line-height: 3;
+    font-size: .9em;
+    font-weight: 200;
+    color: #4831D4;
+    border-bottom: 1px solid #4831D4;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+textarea {
+    padding: 0;
+    border: 0;
+    margin-bottom: 1em;
+    width: 100%;
+    line-height: 2.3;
+    font-size: .9em;
+    font-weight: 200;
+    color: #4831D4;
+    border-bottom: 1px solid #4831D4;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    resize: none;
+}
+
+.button {
+    text-align: center;
+}
+
+button {
+    border: 1px solid #4831D4;
+    background: none;
+    color: #4831D4;
+    box-shadow: inset 0 0 0 0 #4831D4;
+    transition: ease-out 0.2s;
+    margin-top: 2em;
+    padding: 1em 6em;
+    font-size: .9em;
+    font-weight: 300;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover {
+    box-shadow: inset  300px 0 0 #4831D4;
+    color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
