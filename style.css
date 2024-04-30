@@ -8,7 +8,7 @@ body{
 .container{
     display: flex;
     top: 0%;
-    min-width: 55%;
+    min-width: 60%;
     justify-content: center;
 }
 
@@ -35,6 +35,15 @@ main {
     flex: 1;
     padding-top: 6em;
     padding-bottom: 6em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 9em;
 }
 
 .wrapper {
@@ -80,6 +89,17 @@ p {
     flex-direction: row;
     padding: 0%;
     gap: 1em;
+}
+
+.fab {
+    font-size: 1.7em;
+    color: #4831D4;
+    opacity: 0.7;
+    transition: opacity 0.1s;
+}
+
+.fab:hover {
+    opacity: 1;
 }
 
 li {
@@ -133,11 +153,6 @@ nav li.active {
 
 .active .slab{
     width: 4em;
-}
-
-.fab {
-    font-size: 1.7em;
-    color: #4831D4;
 }
 
 @media (max-width: 768px) {
