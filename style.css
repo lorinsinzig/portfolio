@@ -331,6 +331,12 @@ textarea {
     resize: none;
 }
 
+input::placeholder,
+textarea::placeholder{
+    color: white;
+    opacity: .6;
+}
+
 .button {
     text-align: center;
 }
