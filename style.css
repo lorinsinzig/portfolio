@@ -178,8 +178,7 @@ ol {
 #experiences,
 #projects {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
     text-align: left;
     height: fit-content;
     margin-bottom: 9em;
@@ -411,11 +410,48 @@ footer a:hover {
     color: #eea1be;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 969px) {
+    #experiences h3, #projects h3{
+        display: none;
+    }
+}
+
+@media (max-width: 968px) {
     .header{
         position: relative;
         flex: none;
         height: 100vh;
+    }
+
+    .intro{
+        font-size: 1rem;
+        margin-right: 0%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    .fab {
+        font-size: 1.6rem;
+    }
+
+    .wrapper,
+    .links{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .wrapper {
+        justify-content: normal;
+    }
+
+    .links{
+        padding: 0;
     }
 
     .content {
@@ -426,24 +462,61 @@ footer a:hover {
         right: 10%;
     }
 
+    .form{
+        margin-bottom: 50px;
+    }
+
+    .form h2 {
+        margin-bottom: 15px;
+    }
+
+    main{
+        padding-bottom: 5vh;
+    }
+
+    button {
+        margin-top: 25px;
+    }
+
+    #about,
+    #experiences,
+    #projects,
+    #contact{
+        min-width: fit-content;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .experience, .projects{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience header, .projects header {
+        margin-bottom: 10px;
+    }
+
+    .experience ul{
+        margin-top: 10px;
+    }
+
     h1, h2, p {
         text-align: left;
     }
     
     h1 {
         margin: 0%;
-        font-size: 1.8rem;
+        font-size: 2.2rem;
         font-weight: bold;
     }
     
     h2 {
-        font-size: .8rem;
+        font-size: 1.2rem;
         font-weight: 550;
         margin-bottom: 1rem;
     }
 
-    .intro {
-        font-size: .7rem;
-        margin-right: 0%;
+    #experiences h3, #projects h3{
+        margin: 0;
     }
 }
