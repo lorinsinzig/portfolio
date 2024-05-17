@@ -362,10 +362,12 @@ button {
 
 button:hover {
     border: 1px solid #eea1be;
-    box-shadow: inset  300px 0 0 #eea1be;
+    box-shadow: inset  400px 0 0 #eea1be;
 }
 
 .footer {
+    display: flex;
+    justify-content: space-between;
     border-bottom: 1px solid white;
 }
 
@@ -396,7 +398,7 @@ footer div {
     text-align: right;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    max-width: fit-content;
+    min-width: fit-content;
 }
 
 footer a {
@@ -410,9 +412,16 @@ footer a:hover {
     color: #eea1be;
 }
 
+@media (min-width: 1921px) {
+    html, body {
+        font-size: 22px;
+    }
+}
+
 @media (min-width: 969px) {
-    #experiences h3, #projects h3{
+    #erfahrungen, #projekte{
         display: none;
+        font-size: 1.4rem;
     }
 }
 
